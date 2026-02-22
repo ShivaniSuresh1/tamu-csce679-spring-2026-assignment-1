@@ -2,17 +2,24 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <!-- Page title -->
     <title>Hong Kong Monthly Temperature Matrix</title>
+
+    <!-- Load the CSS and D3.js library-->
     <link rel="stylesheet" href="style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
+    <h2>Hong Kong Monthly Temperature Matrix (Last 10 Years)</h2>
+    <h3>Click to toggle between Max/Min</h3>
 
-<h2>Hong Kong Monthly Temperature Matrix (Last 10 Years)</h2>
-<h3> Click to toggle between Max/Min</h3>
-<div id="chart"></div>
-<div id="tooltip"></div>
+    <!-- Container for matrix chart -->
+    <div id="chart"></div>
 
-<script src="script.js"></script>
+    <!-- Tooltip container that appears when hovering over cells -->
+    <div id="tooltip"></div>
+    
+    <!-- Load the JS file with the logic -->-
+    <script src="script.js"></script>
 </body>
 </html>

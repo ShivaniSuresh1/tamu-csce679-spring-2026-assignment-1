@@ -1,7 +1,9 @@
+/* Setting font for the entire page */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Tooltip Styling */
 #tooltip {
     position: absolute;
     background: white;
@@ -12,10 +14,12 @@ body {
     opacity: 0;
 }
 
+/* Matrix cell border set to light grey */
 .cell rect {
     stroke: #eee;
 }
 
+/* Legend label font */
 .legend {
     font-size: 12px;
 }
