@@ -152,6 +152,7 @@ function renderAxes(scales) {
         .attr("y1", AXIS_OFFSET - axisExtension)
         .attr("y2", innerHeight)
         .attr("stroke", "black");
+    
 }
 
 // Grid Lines Rendering
@@ -182,6 +183,25 @@ function renderGridLines(scales) {
         .attr("y1", d => scales.yScale(d))
         .attr("y2", d => scales.yScale(d))
         .attr("stroke-width", 0.5);
+    
+    // X-axis label (Year)
+    svgContainer.append("text")
+        .attr("x", (AXIS_OFFSET + innerWidth) / 2)
+        .attr("y", AXIS_OFFSET - 25)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "14px")
+        .attr("fill", "black")
+        .text("Year");
+
+    // Y-axis label (Month)
+    svgContainer.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("x", -(AXIS_OFFSET + innerHeight) / 2)
+        .attr("y", AXIS_OFFSET - 55)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "14px")
+        .attr("fill", "black")
+        .text("Month");
 }
 
 // Heatmap Cells Rendering
