@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.cell rect {
+    stroke: #eee;
+}
+
+.legend {
+    font-size: 12px;
+}
